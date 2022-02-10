@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+:root {
+  --main-color: #66768a;
+}
+
+header {
+  background-color: var(--main-color);
+}
+
+.nav-list {
+  height: 2.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  align-items: center;
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.logo {
+  width: 3.2rem;
+}
+
+.left-nav a {
+  color: white;
+}
+
+.donate-btn {
+  background-color: white;
+  padding: 0.4rem 0.8rem;
+  color: black;
+  border-radius: 5px;
+}
+
+#hero {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0rem;
+  padding: 6.8rem 0;
+}
+
+#hero .title {
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  margin-top: 2.8rem;
+  color: white;
+  letter-spacing: 0.4px;
+}
+
+#hero .details {
+  font-size: 1.2rem;
+  color: white;
+  white-space: pre-line;
+}
+
+#hero .video {
+  color: #d3d3d3;
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.video i {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+}
+
+.video:hover i {
+  color: white;
+}
+
+#purpose {
+  text-align: center;
+  margin: 6.2rem 0;
+}
+
+#purpose h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#purpose p {
+  white-space: pre-wrap;
+  line-height: 1.2;
+}
+
+#tasks {
+  background-color: #dbdfe2;
+  margin: 4.8rem 0;
+  padding: 1.2rem 0;
+}
+
+.tasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+  text-align: center;
+}
+
+.task-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.task-card img {
+  width: 18.2rem;
+}
+
+.task-card .card-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.task-card .task-desc {
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+}
+
+.task-btn {
+  background-color: #dbdfe2;
+  padding: 0.4rem 0.8rem;
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 9.2rem;
+  height: 2.2rem;
+  align-self: center;
+}
+
+#volunteer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 4.8rem 0;
+}
+
+#volunteer h2 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#volunteer p {
+  white-space: pre-line;
+}
+
+.volunteer-btn {
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  width: 12.8rem;
+  height: 100%;
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 2.4rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  background-color: #161f2a;
+  padding: 0 2.4rem;
+  justify-content: flex-end;
+}
+
+.task-card:nth-of-type(2) {
+  margin-top: 0.6rem;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-top: 1.2rem;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.social-links {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.site-map {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-title {
+  color: #66768a;
+}
+
+.footer-details {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.f-details {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.right-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.address {
+  color: #66768a;
+}
+
+.lower-footer::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.lower-footer p {
+  color: white;
+  font-size: 0.8rem;
+}
