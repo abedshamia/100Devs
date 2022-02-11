@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --main-color: #f5f9fc;
+  --secondary-color: #304659;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color);
+  padding: 0.4rem 2.4rem;
+}
+header p.logo {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+nav .nav-list {
+  font-weight: 600;
+  display: flex;
+  gap: 2.4rem;
+  list-style-type: none;
+}
+
+.nav-link {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+.btn {
+  padding: 0.8rem 2.2rem;
+  background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 0 0 8.2rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+}
+.container2 {
+  background-color: var(--main-color);
+}
+
+.left-hero-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+  align-self: flex-start;
+  margin-top: 1.2rem;
+}
+
+.left-hero-section .tag-line {
+  font-size: 0.8rem;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.left-hero-section .form-control {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.form-control input {
+  border: none;
+  padding: 0.8rem 1.2rem;
+  background-color: #c3dcec;
+  color: #777;
+  font-size: 1rem;
+  width: 50%;
+}
+
+.left-hero-section p:last-child {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  width: 45%;
+  line-height: 1.4;
+}
+
+.right-hero-section {
+  width: 100%;
+  overflow-x: hidden;
+}
+.right-hero-section img {
+  width: 150%;
+  margin-left: -4rem;
+  filter: contrast(0.1) brightness(1.6) opacity(0.6);
+}
+
+.features {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2.4rem;
+  padding-right: 8.2rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.feature i {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+}
+
+.feature .feature-name {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.feature .feature-details {
+  font-size: 0.7rem;
+  line-height: 1.8;
+}
+
+.feature .feature-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.feature .feature-link:visited {
+  color: #304659;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 2.4rem;
+  padding-top: 3.8rem;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 4.2rem;
+}
+
+.about .title {
+  font-size: 2.4rem;
+  color: #304659;
+  font-weight: 700;
+}
+
+.about .details {
+  font-size: 0.8rem;
+  color: #aaa;
+  width: 45%;
+  line-height: 1.4;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 62.5%;
+  }
+  .nav-list,
+  .nav-link,
+  header .btn {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+  }
+}
+
+@media screen and (max-width: 426px) {
+  html {
+    font-size: 42.5%;
+  }
+
+  .container {
+    padding: 1.8rem;
+    background-color: var(--main-color);
+    gap: 1.2rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    gap: 2.4rem;
+  }
+  .left-hero-section {
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center;
+  }
+
+  .left-hero-section .form-control {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .left-hero-section p:last-of-type {
+    width: 100%;
+  }
+
+  .form-control input {
+    width: 100%;
+  }
+
+  .form-control .btn {
+    width: 100%;
+  }
+
+  .right-hero-section img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    gap: 4.8rem;
+  }
+
+  .feature {
+    align-self: center;
+    text-align: center;
+  }
+
+  .about .details {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
