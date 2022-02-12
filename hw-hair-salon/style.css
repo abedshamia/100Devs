@@ -154,7 +154,8 @@ nav select {
   display: flex;
   gap: 0.2rem;
   align-self: center;
-  margin-right: 4.2rem;
+  margin-right: 2.4rem;
+  margin-bottom: 4.8rem;
 }
 
 .arrow-btns a {
@@ -171,7 +172,153 @@ nav select {
 }
 
 .container {
-  border: 1px solid red;
-  width: 60%;
+  width: 65%;
   margin: auto;
+  margin-top: 6.2rem;
+}
+
+.features-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2.4rem;
+}
+
+.features-box-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.features-box-item i {
+  font-size: 3.2rem;
+}
+
+.feature-name {
+  font-size: 1.2rem;
+}
+
+.features-box-item p:last-child {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 8.2rem;
+}
+
+.call-to-action-text {
+  width: 100%;
+  display: flex;
+  padding-right: 3.2rem;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-self: flex-start;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 92%;
+}
+
+.cta-desc {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.call-to-action-text .hero-btn {
+  align-self: flex-start;
+  font-weight: 600;
+}
+
+.call-to-action-image {
+  width: 100%;
+  position: relative;
+}
+
+.call-to-action-image img {
+  width: 100%;
+  filter: brightness(0.9);
+}
+.call-to-action-image:hover img {
+  filter: brightness(1);
+}
+
+.call-to-action-image i {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 3.2rem;
+  color: #eee;
+  background-color: black;
+  padding: 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.call-to-action-image i::after {
+  content: '';
+  position: absolute;
+  padding: 3rem;
+  background-color: #222;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8.2rem;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 30%;
+}
+
+.team-member-image {
+  width: 100%;
+}
+
+.team-member-image img {
+  width: 100%;
+}
+
+.team-member-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 80%;
+  align-self: center;
+  position: absolute;
+  background-color: #000;
+  bottom: -5%;
+  color: white;
+  text-align: center;
+  padding-top: 0.6rem;
+}
+
+.team-member-name {
+  font-size: 1.1rem;
+}
+
+.team-member-position {
+  font-size: 0.8rem;
+}
+
+.offer {
+  margin-top: 8.2rem;
 }
