@@ -101,7 +101,7 @@
 }
 
 .about-us {
-  margin-top: 14.9rem;
+  margin-top: 10.2rem;
 }
 
 .about-us-images {
@@ -112,7 +112,7 @@
   left: 0;
   z-index: -1;
   overflow: hidden;
-  height: 100vh;
+  height: 113vh;
 }
 
 .about-us-images img:first-child {
@@ -131,10 +131,10 @@
   width: 65%;
   gap: 1.2rem;
   margin: 0 auto;
-  padding-top: 6.2rem;
+  padding-top: 8.2rem;
   padding-left: 8.2rem;
   background-color: #fff;
-  padding-bottom: 6.2rem;
+  padding-bottom: 7.2rem;
   border-radius: 10px;
   margin-right: 2.4rem;
 }
@@ -142,6 +142,9 @@
 .section-name {
   color: orangered;
   font-size: 1.4rem;
+}
+
+.about-us-section .section-name {
   margin-left: -0.4rem;
 }
 
@@ -158,4 +161,212 @@
 .about-us-section .location-btn {
   align-self: flex-start;
   margin-top: 1.2rem;
+  border-radius: 7px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.2rem;
+}
+
+.menu .menu-types {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 3.8rem;
+  font-size: 1.2rem;
+  margin-top: 2.4rem;
+  box-shadow: 0 0rem 0.5rem 0.2rem rgba(0, 0, 0, 0.05);
+  padding: 1.2rem 3.2rem;
+}
+
+.menu-types .active {
+  color: orangered;
+}
+
+.menu-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3.2rem;
+  gap: 1.8rem;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu-card-img {
+  width: 100%;
+  height: 30rem;
+}
+
+.menu-card-img img {
+  height: 25rem;
+  width: 25rem;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.menu-card:hover img {
+  filter: brightness(0.5);
+}
+
+.menu-card:first-child img {
+  filter: brightness(0.5);
+}
+
+.menu-card-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-card:hover .menu-card-details {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-card:first-child .menu-card-details {
+  opacity: 1;
+  visibility: visible;
+}
+
+.meal-price {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.meal-rating {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: orange;
+}
+
+.meal-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.menu-card-details .location-btn {
+  border-radius: 7px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.2rem;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.section-header i {
+  margin-top: 1.8rem;
+  color: orangered;
+  font-size: 1.8rem;
+  padding: 1.2rem;
+  border: orangered solid 1px;
+  border-radius: 50%;
+}
+
+.section-image {
+  margin-top: 4.2rem;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.section-image img {
+  max-width: 100%;
+}
+
+.phone-num {
+  font-size: 2rem;
+  font-weight: 600;
+  color: orangered;
+}
+
+.opening-hours {
+  width: 50%;
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.days p:last-child {
+  margin-top: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.2rem;
+  padding-bottom: 3.2rem;
+}
+
+.testimonial img {
+  width: 6.2rem;
+  border-radius: 50%;
+  margin-top: 2.8rem;
+}
+
+.testimonial-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+}
+
+.testimonial i {
+  color: orange;
+  margin: 1.2rem 0;
+}
+
+.customer-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+}
+
+.customer-position {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.customer-comment {
+  font-style: italic;
+  line-height: 1.6;
 }
