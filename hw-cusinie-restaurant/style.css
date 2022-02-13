@@ -44,6 +44,7 @@
   align-items: flex-start;
   width: 80%;
   margin-top: 8.2rem;
+  padding-bottom: 15rem;
 }
 
 .hero-title {
@@ -100,29 +101,19 @@
   font-weight: 600;
 }
 
-.about-us {
-  margin-top: 10.2rem;
-}
-
 .about-us-images {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   position: absolute;
   left: 0;
   z-index: -1;
   overflow: hidden;
-  height: 113vh;
+  height: 130vh;
 }
 
-.about-us-images img:first-child {
-  opacity: 0.9;
-  border: none;
-}
-
-.about-us-images img:last-child {
-  margin-right: -5rem;
-  opacity: 0.9;
+.about-us-images img {
+  max-width: 100%;
+  position: absolute;
 }
 
 .about-us-section {
@@ -131,9 +122,8 @@
   width: 65%;
   gap: 1.2rem;
   margin: 0 auto;
-  padding-top: 8.2rem;
-  padding-left: 8.2rem;
-  background-color: #fff;
+  padding-top: 6.2rem;
+  padding-left: 19.2rem;
   padding-bottom: 7.2rem;
   border-radius: 10px;
   margin-right: 2.4rem;
@@ -169,7 +159,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4.2rem;
+  margin-top: 8.2rem;
 }
 
 .menu .menu-types {
