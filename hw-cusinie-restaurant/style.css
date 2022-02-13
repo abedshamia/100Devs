@@ -114,19 +114,19 @@
 .about-us-images img {
   max-width: 100%;
   position: absolute;
+  opacity: 0.9;
 }
 
 .about-us-section {
   display: flex;
   flex-direction: column;
-  width: 65%;
+  width: 50%;
   gap: 1.2rem;
   margin: 0 auto;
   padding-top: 6.2rem;
-  padding-left: 19.2rem;
   padding-bottom: 7.2rem;
   border-radius: 10px;
-  margin-right: 2.4rem;
+  margin-right: 10rem;
 }
 
 .section-name {
