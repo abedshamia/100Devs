@@ -719,3 +719,83 @@ header::before {
   margin-right: 1.8rem;
   color: var(--font-color);
 }
+
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 52.5%;
+  }
+
+  header::before {
+    height: 50vh;
+  }
+
+  .services {
+    margin-top: 10.2rem;
+  }
+
+  .ad {
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 14.2rem;
+  }
+  .ad::before {
+    top: -100%;
+  }
+}
+
+@media screen and (max-width: 421px) {
+  html {
+    font-size: 30%;
+  }
+
+  header::before {
+    height: 30vh;
+    left: -9%;
+  }
+
+  .ad {
+    margin-top: 14.2rem;
+  }
+
+  .ad::before {
+    height: 19vh;
+  }
+
+  .add-btn {
+    font-size: 1.2rem;
+  }
+
+  .brands-imgs {
+    flex-wrap: wrap;
+  }
+
+  .services-cards {
+    justify-content: center;
+    gap: 5.2rem;
+  }
+
+  .service-card {
+    width: 40%;
+    align-self: flex-start;
+  }
+
+  .service-card-image img {
+    max-width: 100%;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    margin-top: 18.2rem;
+    gap: 4.2rem;
+  }
+
+  .footer-part {
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first-part {
+    align-self: center;
+  }
+}

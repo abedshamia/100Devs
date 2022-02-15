@@ -10,19 +10,18 @@
 
 .background-img {
   width: 100%;
+  height: 100%;
   position: absolute;
-  background: no-repeat center center;
-  background-size: cover;
   top: 0;
   left: 0;
   transform: scaleX(-1);
   z-index: -1;
-  height: 105vh;
   overflow: hidden;
 }
 
 .background-img img {
-  max-width: fit-content;
+  width: 100%;
+  object-fit: cover;
 }
 
 .nav-list {
@@ -112,9 +111,10 @@
 }
 
 .about-us-images img {
-  max-width: 100%;
+  width: 100%;
   position: absolute;
   opacity: 0.9;
+  object-fit: cover;
 }
 
 .about-us-section {
@@ -359,4 +359,47 @@
 .customer-comment {
   font-style: italic;
   line-height: 1.6;
+}
+
+@media screen and (max-width: 847px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .about-us-section {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 50%;
+  }
+
+  .about-us-section {
+    width: 100%;
+  }
+
+  .about-us-section .section-title {
+    font-size: 3.2rem;
+  }
+  .menu-cards {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-card-img {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 421px) {
+  html {
+    font-size: 30%;
+  }
+
+  .menu-cards {
+    flex-wrap: wrap;
+  }
 }
