@@ -61,7 +61,8 @@ header {
 #hero .details {
   font-size: 1.2rem;
   color: white;
-  white-space: pre-line;
+  padding: 0 6.2rem;
+  margin-top: 1.2rem;
 }
 
 #hero .video {
@@ -95,8 +96,8 @@ header {
 }
 
 #purpose p {
-  white-space: pre-wrap;
   line-height: 1.2;
+  padding: 0 6.2rem;
 }
 
 #tasks {
@@ -134,7 +135,6 @@ header {
 
 .task-card .task-desc {
   font-size: 0.8rem;
-  white-space: pre-wrap;
 }
 
 .task-btn {
@@ -164,7 +164,7 @@ header {
 }
 
 #volunteer p {
-  white-space: pre-line;
+  padding: 0 6.2rem;
 }
 
 .volunteer-btn {
@@ -256,4 +256,20 @@ footer {
 .lower-footer p {
   color: white;
   font-size: 0.8rem;
+}
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  html {
+    font-size: 50%;
+  }
+
+  .tasks {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
 }
