@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 8.2rem;
+}
+
+.btns {
+  display: flex;
+  gap: 4.2rem;
+}
+
+.title {
+  color: rgb(54, 41, 24);
+}
+
+.btn {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  border: 2px rgb(0, 0, 0) solid;
+  outline: none;
+  margin-top: 2.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.red {
+  background-color: red;
+}
+
+.btn.yellow {
+  background-color: yellow;
+}
+
+.btn.blue {
+  background-color: blue;
+}
+
+.btn.green {
+  background-color: green;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+}
+
+.inputs {
+  margin-top: 3.2rem;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.inputs input {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.inputs input:hover {
+  box-shadow: 0 0 0.2rem rgb(129, 129, 129);
+  width: 6.2rem;
+}
+
+.code {
+  background-color: rgb(43, 42, 42);
+  padding: 1.2rem 6.2rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.code {
+  margin-top: 1.2rem;
+  color: aliceblue;
+  letter-spacing: 1px;
+}
+
+.copied {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  opacity: 0.9;
+  letter-spacing: 1px;
+  padding: 0.8rem;
+  background-color: white;
+  border-radius: 5px;
+  animation: disappear 0.5s ease-in-out forwards;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (max-width: 421px) {
+  html {
+    font-size: 50%;
+  }
+}
