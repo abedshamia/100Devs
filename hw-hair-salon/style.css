@@ -5,6 +5,11 @@
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -454,4 +459,35 @@ nav select {
   html {
     font-size: 33%;
   }
+
+  .team {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.2rem;
+  }
+
+  .team-member-name {
+    font-size: 1.8rem;
+  }
+
+  .team-member {
+    width: 70%;
+  }
+  .offer-image img {
+    width: 50%;
+    right: 0;
+  }
+
+  .lookbook-images {
+    overflow: hidden;
+    height: 38rem;
+    margin-bottom: 4.8rem;
+    width: 100%;
+    padding: 0 4.2rem;
+  }
+  .lookbook-images img {
+    max-width: 100%;
+  }
 }
+  
