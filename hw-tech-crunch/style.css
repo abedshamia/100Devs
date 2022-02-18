@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  gap: 1.8rem;
+  padding-top: 0.8rem;
+}
+
+#side-bar {
+  padding: 1.2rem 1.8rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+ul li {
+  list-style: none;
+  margin: 0.4rem 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.nav-header .nav-link {
+  font-size: 1rem;
+}
+.nav-header {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  width: 100%;
+  align-self: flex-start;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.main-article h1 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #111;
+}
+
+.author {
+  padding: 0.2rem 0;
+  font-size: 0.7rem;
+  color: #aaa;
+}
+
+.main-img {
+  width: 100%;
+}
+
+.latest-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.sep {
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.article-card {
+  display: flex;
+  gap: 1.8rem;
+  justify-content: center;
+}
+
+.article-heading {
+  flex-basis: 200%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.article-title {
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: bold;
+  color: #333;
+}
+
+.article-author {
+  font-size: 0.6rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.article-date {
+  font-size: 0.7rem;
+  color: #aaa;
+}
+
+.article-text {
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+#right-side-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-right: 4rem;
+}
+
+.link-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 50%;
+}
+
+.link-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.link-author {
+  font-size: 0.6rem;
+  color: #666;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.ads {
+  width: 33%;
+  margin-left: 2.4rem;
+}
+.advertise {
+  width: 100%;
+  padding: 0.8rem 0;
+}
