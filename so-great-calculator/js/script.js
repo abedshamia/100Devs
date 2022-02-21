@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Toggle mode
+// when click on toggle mode button it will change the theme
 toggleMode.addEventListener('click', () => {
   EleArray.forEach(e => e.classList.toggle('light'));
 
@@ -46,6 +48,8 @@ buttons.forEach(btn => {
 
 const arithmiticBtns = document.querySelectorAll('.btn-ar');
 
+// Arithmitic Buttons
+// when click on arithmitic button it will add the value to the input
 arithmiticBtns.forEach(btn => {
   btn.addEventListener('click', e => {
     allInput.textContent += btn.textContent;
