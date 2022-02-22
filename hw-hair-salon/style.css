@@ -417,6 +417,12 @@ nav select {
 
 .lookbook-images img {
   max-width: max-content;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.lookbook-images img:hover {
+  filter: brightness(0.6);
 }
 
 .first-col {
@@ -490,4 +496,3 @@ nav select {
     max-width: 100%;
   }
 }
-  
