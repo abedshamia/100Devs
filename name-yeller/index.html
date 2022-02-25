@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Temp Changer</title>
+    <title>Name yeller</title>
     <style>
       .container {
         width: 100%;
@@ -45,6 +45,13 @@
         font-weight: 500;
         color: #333;
         padding: 0 1.6rem;
+        cursor: pointer;
+      }
+
+      .result {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #333;
       }
     </style>
   </head>
@@ -52,22 +59,22 @@
     <div class="container">
       <div class="row">
         <label for="f-name">First name:</label>
-        <input type="text" class="form-control" />
+        <input type="text" class="form-control" name="first-name" />
       </div>
       <div class="row">
         <label for="l-name">Last name:</label>
-        <input type="text" class="form-control" />
+        <input type="text" class="form-control" name="last-name" />
       </div>
-      <div class="row">
-        <label for="p">Paragraph</label>
-        <input type="text" class="form-control" />
-      </div>
+
       <div class="row">
         <label for="age">Age</label>
-        <input type="text" class="form-control" />
+        <input type="text" class="form-control" name="age" />
       </div>
+
+      <source src="./beat.mp3" type="audio/mpeg" />
 
       <button class="btn">Submit</button>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
