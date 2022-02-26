@@ -1,25 +1,33 @@
 const firstName = document.getElementsByName('first-name')[0];
-const lastName = document.getElementsByName('last-name')[0];
-const age = document.getElementsByName('age')[0];
 const submit = document.querySelector('.btn');
 const container = document.querySelector('.container');
 const source = document.querySelector('source');
+let bg = document.querySelector('body');
 
 //Get the voices that are available
 const synth = window.speechSynthesis;
 
 submit.addEventListener('click', callResult);
 
+submit.addEventListener('click', () => {
+  setTimeout(() => {
+    setInterval(changeColor, 10);
+  }, 2000);
+});
+
+function changeColor() {
+  bg.style.backgroundColor = `#${Math.round(Math.random() * 100000)}`;
+}
 function callResult() {
   clearResult();
-  if (firstName.value === '' || lastName.value === '' || age.value === '') {
+  if (firstName.value === '') {
     const result = document.createElement('div');
     result.classList.add('result');
-    result.innerHTML = 'Please fill all the fields';
+    result.innerHTML = 'Please fill the field';
     container.appendChild(result);
     return;
   }
-  const result = `My name is ${firstName.value} ${lastName.value} and I'm ${age.value} years old`;
+  const result = firstName.value;
   const resultElement = document.createElement('h1');
   resultElement.innerText = result;
   resultElement.classList.add('result');
@@ -33,7 +41,7 @@ function callResult() {
 
   setTimeout(() => {
     audio.play();
-  }, 4000);
+  }, 2000);
 
   audio.addEventListener('ended', () => {
     audio.currentTime = 0;

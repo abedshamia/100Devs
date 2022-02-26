@@ -19,7 +19,7 @@
 
       .row {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2.4rem;
@@ -52,25 +52,29 @@
         font-size: 1.6rem;
         font-weight: 500;
         color: #333;
+        animation: mutate 0.8s ease-in-out infinite alternate both 2s;
+      }
+
+      @keyframes mutate {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(2.4rem) scale(1.4) rotate(360deg);
+          color: red;
+        }
+        100% {
+          transform: translateY(0);
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <label for="f-name">First name:</label>
-        <input type="text" class="form-control" name="first-name" />
+        <h1 for="f-name">Drop it 🎤</h1>
+        <textarea name="first-name" id="" cols="30" rows="10" class="form-control"></textarea>
       </div>
-      <div class="row">
-        <label for="l-name">Last name:</label>
-        <input type="text" class="form-control" name="last-name" />
-      </div>
-
-      <div class="row">
-        <label for="age">Age</label>
-        <input type="text" class="form-control" name="age" />
-      </div>
-
       <source src="./beat.mp3" type="audio/mpeg" />
 
       <button class="btn">Submit</button>
