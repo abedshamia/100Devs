@@ -28,8 +28,9 @@ function callResult() {
     return;
   }
   const result = firstName.value;
+
   const resultElement = document.createElement('h1');
-  resultElement.innerText = result;
+  resultElement.innerText = `🔥${result}🔥`;
   resultElement.classList.add('result');
   container.appendChild(resultElement);
 

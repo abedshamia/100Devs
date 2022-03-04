@@ -40,6 +40,10 @@ header nav {
   gap: 2.4rem;
 }
 
+.nav-list .icons i {
+  cursor: pointer;
+}
+
 nav select {
   border: none;
   outline: none;
@@ -64,9 +68,22 @@ nav select {
 .hero img {
   max-width: fit-content;
   width: 100%;
+  height: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
   border-bottom-right-radius: 7%;
   z-index: -1;
+  animation: crop 3s ease-in-out;
+}
+
+@keyframes crop {
+  0% {
+    opacity: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  100% {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+  }
 }
 
 .hero-text {
@@ -86,6 +103,7 @@ nav select {
   font-size: 6.2rem;
   text-transform: uppercase;
   color: #efefef;
+  animation: fadeIn 4s ease-in-out;
 }
 
 .hero-slang {
@@ -93,6 +111,7 @@ nav select {
   letter-spacing: 1px;
   font-size: 1rem;
   text-transform: uppercase;
+  animation: fadeIn 4.5s ease-in-out;
 }
 
 .hero-btn {
@@ -104,6 +123,7 @@ nav select {
   color: #ddd;
   align-self: flex-start;
   text-transform: uppercase;
+  animation: fadeIn 4s ease-in-out;
 }
 
 .discount-box {
@@ -116,11 +136,26 @@ nav select {
   color: white;
   align-self: flex-start;
   width: 45%;
+  animation: fadeIn 4s ease-in-out;
 }
 
 .discount {
   font-size: 1.8rem;
   font-weight: 700;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .discount-box p:nth-child(1) {
