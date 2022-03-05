@@ -44,7 +44,7 @@
     <main>
       <section class="hero" id="home">
         <div class="banner-image">
-          <img src="./img/banner.jfif" alt="" />
+          <img src="./img/banner-1.jpg" alt="" class="banner__img" data-img="1" />
         </div>
         <div class="hero-text">
           <div class="hero-text-box">
@@ -64,8 +64,8 @@
         <div class="hero-right-box">
           <p>Lorem ipsum dolor sit amet.</p>
           <div class="arrow-btns">
-            <a href=""><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-            <a href=""> <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            <button class="prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+            <button class="next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
           </div>
         </div>
       </section>
@@ -178,6 +178,30 @@
     </main>
 
     <script>
+      const nextBtn = document.querySelector('.next');
+      const prevBtn = document.querySelector('.prev');
+      const bannerImg = document.querySelector('.banner__img');
+
+      nextBtn.addEventListener('click', e => {
+        e.preventDefault;
+        let imgNum = parseInt(bannerImg.dataset.img);
+        if (imgNum < 4) {
+          imgNum++;
+          bannerImg.dataset.img = imgNum;
+          bannerImg.src = `./img/banner-${imgNum}.jpg`;
+        }
+      });
+
+      prevBtn.addEventListener('click', e => {
+        e.preventDefault;
+        let imgNum = parseInt(bannerImg.dataset.img);
+        if (imgNum > 1) {
+          imgNum--;
+          bannerImg.dataset.img = imgNum;
+          bannerImg.src = `./img/banner-${imgNum}.jpg`;
+        }
+      });
+
       window.addEventListener('scroll', reveal);
 
       function reveal() {

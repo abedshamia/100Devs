@@ -91,9 +91,8 @@ nav select {
 }
 
 .hero img {
-  max-width: fit-content;
   width: 100%;
-  height: 100%;
+  height: 125vh;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
   border-bottom-right-radius: 7%;
   z-index: -1;
@@ -248,13 +247,14 @@ nav select {
   margin-bottom: 4.8rem;
 }
 
-.arrow-btns a {
-  text-decoration: none;
+.arrow-btns button {
   color: black;
+  border: none;
   padding: 0.6rem 0.8rem;
   background-color: #eee;
   border-radius: 50%;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .features {
