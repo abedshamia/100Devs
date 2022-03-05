@@ -8,6 +8,7 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 header nav {
@@ -17,6 +18,20 @@ header nav {
   padding: 1.2rem 4.2rem;
   background-color: white;
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-in-out;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .nav-list {
@@ -25,14 +40,21 @@ header nav {
   list-style-type: none;
   gap: 4.2rem;
   text-transform: uppercase;
+  opacity: 0;
+  animation: slideIn 1s ease-in-out 1.2s forwards;
 }
 
-.nav-link {
+.nav-link a {
   font-size: 0.8rem;
+  text-decoration: none;
+  color: #222;
 }
 
 .logo {
   font-weight: 600;
+  opacity: 0;
+
+  animation: slideIn 1s ease-in-out 1s forwards;
 }
 
 .nav-list .icons {
@@ -48,6 +70,8 @@ nav select {
   border: none;
   outline: none;
   text-transform: uppercase;
+  opacity: 0;
+  animation: slideIn 1s ease-in-out 1s forwards;
 }
 
 .hero {
@@ -56,6 +80,7 @@ nav select {
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-top: 3.6rem;
 }
 
 .banner-image {
@@ -78,7 +103,7 @@ nav select {
 @keyframes crop {
   0% {
     opacity: 0;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0%);
   }
   100% {
     opacity: 1;
@@ -103,7 +128,7 @@ nav select {
   font-size: 6.2rem;
   text-transform: uppercase;
   color: #efefef;
-  animation: fadeIn 4s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
 }
 
 .hero-slang {
@@ -111,7 +136,7 @@ nav select {
   letter-spacing: 1px;
   font-size: 1rem;
   text-transform: uppercase;
-  animation: fadeIn 4.5s ease-in-out;
+  animation: fadeIn 3.5s ease-in-out;
 }
 
 .hero-btn {
@@ -123,7 +148,13 @@ nav select {
   color: #ddd;
   align-self: flex-start;
   text-transform: uppercase;
-  animation: fadeIn 4s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+  background-color: #efefef;
+  color: #222;
 }
 
 .discount-box {
@@ -136,7 +167,7 @@ nav select {
   color: white;
   align-self: flex-start;
   width: 45%;
-  animation: fadeIn 4s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
 }
 
 .discount {
@@ -147,14 +178,17 @@ nav select {
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    transform: translateX(-100%);
   }
 
   50% {
     opacity: 0;
+    transform: translateX(-100%);
   }
 
   100% {
     opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -192,6 +226,18 @@ nav select {
   padding-right: 1.2rem;
   color: #fff;
   letter-spacing: 2px;
+  animation: slideHorizontal 2s ease-in-out;
+}
+
+@keyframes slideHorizontal {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .hero-right-box .arrow-btns {
@@ -530,4 +576,15 @@ nav select {
   .lookbook-images img {
     max-width: 100%;
   }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 1.5s ease-in-out;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }

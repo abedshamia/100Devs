@@ -25,12 +25,12 @@
       <nav>
         <p class="logo">Ayesha</p>
         <ul class="nav-list">
-          <li class="nav-link">Home</li>
-          <li class="nav-link">About</li>
-          <li class="nav-link">Services</li>
-          <li class="nav-link">Lookbook</li>
-          <li class="nav-link">News</li>
-          <li class="nav-link">Contact</li>
+          <li class="nav-link"><a href="#home">Home</a></li>
+          <li class="nav-link"><a href="#features">Features</a></li>
+          <li class="nav-link"><a href="#team">Team</a></li>
+          <li class="nav-link"><a href="#lookbook">Lookbook</a></li>
+          <li class="nav-link"><a href="#contact">Contact</a></li>
+
           <div class="icons">
             <li class="nav-link"><i class="fas fa-search"></i></li>
             <li class="nav-link"><i class="fas fa-shopping-cart"></i></li>
@@ -42,7 +42,7 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="banner-image">
           <img src="./img/banner.jfif" alt="" />
         </div>
@@ -71,7 +71,7 @@
       </section>
 
       <div class="container">
-        <section class="features">
+        <section class="features reveal" id="features">
           <div class="features-box">
             <div class="features-box-item">
               <i class="fas fa-chair"></i>
@@ -97,7 +97,7 @@
           </div>
         </section>
 
-        <section class="call-to-action">
+        <section class="call-to-action reveal" id="cta">
           <div class="call-to-action-text">
             <p class="cta-title">Make your own momentum</p>
             <p class="cta-desc">
@@ -114,7 +114,7 @@
             <i class="far fa-play-circle"></i>
           </div>
         </section>
-        <section class="team">
+        <section class="team reveal" id="team">
           <div class="team-member">
             <div class="team-member-image">
               <img src="./img/related-3.jfif" alt="" />
@@ -144,7 +144,7 @@
           </div>
         </section>
 
-        <div class="offer">
+        <div class="offer reveal" id="offer">
           <div class="offer-text">
             <p class="offer-slang">Colour day offer!</p>
             <p class="offer-title">
@@ -157,7 +157,7 @@
             <img src="./img/offer.png" alt="" />
           </div>
         </div>
-        <section class="look-book">
+        <section class="look-book reveal" id="lookbook">
           <p class="look-book-title">Our LookBook</p>
           <div class="lookbook-images">
             <div class="first-col">
@@ -176,5 +176,27 @@
         </section>
       </div>
     </main>
+
+    <script>
+      window.addEventListener('scroll', reveal);
+
+      function reveal() {
+        const reveals = document.querySelectorAll('.reveal');
+
+        const revealsArray = Array.from(reveals);
+
+        reveals.forEach(section => {
+          const windowHeight = window.innerHeight;
+          const sectionTop = section.getBoundingClientRect().top;
+          const revealPoint = 150;
+
+          if (sectionTop < windowHeight - revealPoint) {
+            section.classList.add('active');
+          } else {
+            section.classList.remove('active');
+          }
+        });
+      }
+    </script>
   </body>
 </html>
