@@ -22,8 +22,17 @@
 .background-img img {
   width: 100%;
   object-fit: cover;
+  animation: reveal 2s ease-in-out;
 }
 
+@keyframes reveal {
+  0% {
+    clip-path: inset(0% 0 100% 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
 .nav-list {
   display: flex;
   justify-content: flex-end;
@@ -50,11 +59,24 @@
   font-size: 4.2rem;
   font-weight: 600;
   width: 50%;
+  animation: slideAndReveal 1.5s ease-in-out;
+}
+
+@keyframes slideAndReveal {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .form-control {
   display: flex;
   align-items: flex-start;
+  animation: slideAndReveal 1.5s ease-in-out;
 }
 
 .form-control .location-input {
@@ -83,6 +105,7 @@
   display: flex;
   gap: 3.2rem;
   margin-top: 1.2rem;
+  animation: slideAndReveal 1.5s ease-in-out;
 }
 
 .status-part {
